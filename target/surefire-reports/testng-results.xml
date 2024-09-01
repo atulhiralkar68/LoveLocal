@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Chrome Driver launch Susccessfully]]>
+    </line>
+    <line>
+      <![CDATA[Browser window is maximized succefully]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-07-26T13:05:22 IST" name="Surefire suite" finished-at="2024-07-26T13:06:11 IST" duration-ms="49771">
+    <groups>
+    </groups>
+    <test started-at="2024-07-26T13:05:22 IST" name="Surefire test" finished-at="2024-07-26T13:06:11 IST" duration-ms="49771">
+      <class name="test_scripts.LoginUser">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:test_scripts.LoginUser@161479c6]" started-at="2024-07-26T13:05:22 IST" name="openApplication" finished-at="2024-07-26T13:05:37 IST" duration-ms="15499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Chrome Driver launch Susccessfully]]>
+            </line>
+            <line>
+              <![CDATA[Browser window is maximized succefully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="login()[pri:0, instance:test_scripts.LoginUser@161479c6]" started-at="2024-07-26T13:05:37 IST" name="login" finished-at="2024-07-26T13:06:05 IST" duration-ms="28159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="closeAPp()[pri:0, instance:test_scripts.LoginUser@161479c6]" started-at="2024-07-26T13:06:05 IST" name="closeAPp" finished-at="2024-07-26T13:06:11 IST" duration-ms="6057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeAPp -->
+      </class> <!-- test_scripts.LoginUser -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

@@ -1,0 +1,12 @@
+generic\PropertyFileReader.class
+test_scripts\GuestUser.class
+test_scripts\LoginUser.class
+generic\FrameworkConstant.class
+generic\Base_Class.class
+generic\UtilityMethods.class
+pom_scripts\AllPageObjects.class
+pom_scripts\ShopFront.class
+pom_scripts\HomePage.class
+pom_scripts\LoginPage.class
+pom_scripts\ShopsPage.class
+TestNGPractice.class
