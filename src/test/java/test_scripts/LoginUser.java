@@ -21,7 +21,7 @@ import pom_scripts.LoginPage;
 public class LoginUser extends Base_Class{
     //WebDriver driver = new ChromeDriver();
      WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-
+@Test
     public void login () throws InterruptedException, IOException, Throwable
     {
        // WebDriver driver = new ChromeDriver();

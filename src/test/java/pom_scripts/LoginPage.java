@@ -16,10 +16,10 @@ public class LoginPage extends UtilityMethods {
 
    //UtilityMethods util = new UtilityMethods();
     //    public static WebDriver driver;
-    private WebDriver driver;
+    //private WebDriver driver;
 
     public LoginPage(WebDriver driver){
-        this.driver = driver;
+        UtilityMethods.driver = driver;
         PageFactory.initElements(driver, this);
     }
 

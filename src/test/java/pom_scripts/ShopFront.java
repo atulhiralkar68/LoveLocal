@@ -5,7 +5,6 @@
 
 package pom_scripts;
 
-import java.awt.RenderingHints;
 import java.time.Duration;
 
 import org.openqa.selenium.Keys;

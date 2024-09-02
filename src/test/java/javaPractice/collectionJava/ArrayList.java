@@ -10,7 +10,7 @@ public class ArrayList {
       // ArrayList<Integer> mylist = new ArrayList<Integer>();
 
         //Adding data in Array list
-        mylist.add(100); 
+      //  mylist.add(100); 
 
     }
 

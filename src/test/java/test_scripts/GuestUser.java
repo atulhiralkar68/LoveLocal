@@ -21,10 +21,10 @@ import pom_scripts.ShopsPage;
 @Test
 public class GuestUser extends Base_Class{
     
+    @Test
 
 public void guestUser() throws InterruptedException, Throwable
 {
-    LoginPage loginPage = new LoginPage(driver);
     HomePage homePage = new HomePage(driver);
     ShopsPage shopsPage=new ShopsPage(driver);
     ShopFront shopFront= new ShopFront(driver);
