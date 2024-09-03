@@ -1,10 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-
-
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
@@ -26,7 +19,7 @@ public class TestNGPractice {
     public static WebDriver driver;
 
     @Test
-    public void sample(){
+    public void sample() throws InterruptedException{
         ChromeOptions options = new ChromeOptions();
            // Disable notifications
         options.addArguments("--disable-notifications");
@@ -37,9 +30,11 @@ public class TestNGPractice {
     driver.manage().window().maximize();
     Reporter.log("Browser window is maximized succefully");
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+   // WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
     driver.get("https://b2c-frontend-release.lovelocal.in/");
 
+    Thread.sleep(4000);
+    driver.quit();
     }
 }

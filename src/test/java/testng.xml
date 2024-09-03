@@ -2,11 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="MyTestSuite">
 <listeners>
-    <listener class-name = "ExtentReportManager">
+    <listener class-name = "generic.myListner"/>
 </listeners>
     <test name="MyTest">
         <classes>
-            <class name="test_script.GuestUser"/>
+            <class name="test_scripts.GuestUser"/>
             <!-- Add more classes as needed -->
         </classes>
     </test>

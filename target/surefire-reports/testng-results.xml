@@ -8,12 +8,19 @@
       <![CDATA[Browser window is maximized succefully]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-09-02T00:56:18 IST" name="Suite1" finished-at="2024-09-02T00:56:31 IST" duration-ms="12883">
+  <suite started-at="2024-09-03T00:35:24 IST" name="MyTestSuite" finished-at="2024-09-03T00:35:54 IST" duration-ms="30823">
     <groups>
     </groups>
-    <test started-at="2024-09-02T00:56:18 IST" name="Test" finished-at="2024-09-02T00:56:31 IST" duration-ms="12883">
-      <class name="TestNGPractice">
-        <test-method signature="sample()[pri:0, instance:TestNGPractice@72f926e6]" started-at="2024-09-02T00:56:18 IST" name="sample" finished-at="2024-09-02T00:56:31 IST" duration-ms="12747" status="PASS">
+    <test started-at="2024-09-03T00:35:24 IST" name="MyTest" finished-at="2024-09-03T00:35:54 IST" duration-ms="30823">
+      <class name="test_scripts.GuestUser">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:test_scripts.GuestUser@6e171cd7]" started-at="2024-09-03T00:35:24 IST" name="openApplication" finished-at="2024-09-03T00:35:29 IST" duration-ms="5197" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
               <![CDATA[Chrome Driver launch Susccessfully]]>
@@ -22,8 +29,16 @@
               <![CDATA[Browser window is maximized succefully]]>
             </line>
           </reporter-output>
-        </test-method> <!-- sample -->
-      </class> <!-- TestNGPractice -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite1 -->
+        </test-method> <!-- openApplication -->
+        <test-method signature="guestUser()[pri:0, instance:test_scripts.GuestUser@6e171cd7]" started-at="2024-09-03T00:35:29 IST" name="guestUser" finished-at="2024-09-03T00:35:48 IST" duration-ms="19483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- guestUser -->
+        <test-method is-config="true" signature="closeAPp()[pri:0, instance:test_scripts.GuestUser@6e171cd7]" started-at="2024-09-03T00:35:48 IST" name="closeAPp" finished-at="2024-09-03T00:35:54 IST" duration-ms="6024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeAPp -->
+      </class> <!-- test_scripts.GuestUser -->
+    </test> <!-- MyTest -->
+  </suite> <!-- MyTestSuite -->
 </testng-results>
