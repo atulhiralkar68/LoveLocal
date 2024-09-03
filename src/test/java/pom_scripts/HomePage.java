@@ -116,6 +116,7 @@ public class HomePage extends UtilityMethods {
     {
        // seeAll_ShopByCategory.click();
        // WebElement element = driver.findElement(By.linkText("See All"));
+       Thread.sleep(2000);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", seeAll_ShopByCategory);
        //((JavascriptExecutor) driver).executeScript("arguments[0].click();", seeAll_ShopByCategory);
      wait.until(ExpectedConditions.elementToBeClickable(seeAll_ShopByCategory));

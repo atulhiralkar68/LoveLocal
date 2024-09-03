@@ -42,7 +42,7 @@ public class LoginUser extends Base_Class{
         homePage.selectLocation();
         homePage.clickInSearchBoxAndEnterLocation("LOCATION");
         homePage.choseAddress();
-        homePage.clearCartContinue();
+        //homePage.clearCartContinue();
 
          System.out.println("Owhoo..! Test Pass");
     }

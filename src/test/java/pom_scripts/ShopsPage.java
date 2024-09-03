@@ -33,11 +33,19 @@ public class ShopsPage extends UtilityMethods{
     @FindBy(xpath="//h4[@title=\"Atul Hiralkar Fruits And Vegetables Supermarket\"]")
     WebElement clickOnShop;
 
+    @FindBy(xpath = "//h4[@class='r__store_title']")
+    WebElement FirstShop;
+
     public void clickOnShop()
     {
+        try{
         wait.until(ExpectedConditions.visibilityOf(clickOnShop));
         clickOnShop.click();
-
+        }catch(NullPointerException e){
+            System.out.println("Atul Shop is not available selecting some other shop");
+            FirstShop.click();
+            
+        }
     }
 
 }

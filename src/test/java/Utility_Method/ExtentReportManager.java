@@ -20,17 +20,19 @@ public class ExtentReportManager implements ITestListener{
    
 
     public ExtentSparkReporter sparkReport ; //UI of the Report 
-    private ExtentReports extent;//Populate common info on report
+    private ExtentReports extent=  new ExtentReports();//Populate common info on report
     private ExtentTest test;  // Creating test cases entries in the report and update status of the test methods
     
-    public void setup() {
-        // Initialize ExtentReports
-        ExtentSparkReporter htmlReporter = new ExtentSparkReporter("extentReport.html");
-        extent = new ExtentReports();
-        extent.attachReporter(htmlReporter);
-    }
+    // public void setup() {
+    //     // Initialize ExtentReports
+    //     ExtentSparkReporter htmlReporter = new ExtentSparkReporter("extentReport.html");
+    //     extent = new ExtentReports();
+    //     extent.attachReporter(htmlReporter);
+    // }
+
     public void onStart(ITestResult context ){
-        //sparkReport = new ExtentSparkReporter("/src/test/reports/myReport.html");
+
+        sparkReport = new ExtentSparkReporter(System.getProperty("user.dir")+"report/myReport.html");
         
        // sparkReport = new ExtentSparkReporter("extentReport.html");
 
@@ -46,6 +48,7 @@ public class ExtentReportManager implements ITestListener{
         extent.setSystemInfo("Tester Name", "Atul");
         extent.setSystemInfo("OS", "Wondows10");
         extent.setSystemInfo("Browser Name ", "Chrome");
+        System.out.println("On start Executed");
     }
 
     public void onTestSuccess(ITestResult result){
@@ -61,6 +64,7 @@ public class ExtentReportManager implements ITestListener{
 
     public void onFinish(ITestContext context){
         extent.flush();
+        System.out.println("Report generated successfuly");
 
     }
     
